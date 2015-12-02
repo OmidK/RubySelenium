@@ -3,7 +3,7 @@ require 'pry'
 require 'require_all'
 require_all 'page_objects'
 
-# See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+#http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
@@ -15,6 +15,5 @@ RSpec.configure do |config|
 
   config.after(:each) do
     @driver.close
-  end  
-
+  end
 end
